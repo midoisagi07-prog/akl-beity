@@ -1,0 +1,228 @@
+﻿*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+line-height:1.6;
+transition:.4s;
+}
+
+header{
+background:#d35400;
+padding:20px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h2{
+color:#fff;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav-links a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+}
+
+#themeBtn{
+background:#fff;
+border:none;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+background-size:cover;
+color:#fff;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#d35400;
+color:#fff;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+}
+
+section{
+padding:80px 5%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+color:#d35400;
+}
+
+.filters{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.filters button{
+padding:10px 20px;
+border:none;
+background:#d35400;
+color:#fff;
+border-radius:30px;
+cursor:pointer;
+}
+
+.menu-grid,
+.shop-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+}
+
+form{.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+color:#fff;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+margin:20px auto;
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+transform:scale(1.05);
+}
+max-width:600px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+form input,
+form textarea,
+form button{
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+form button{
+background:#d35400;
+color:#fff;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:#fff;
+text-align:center;
+padding:40px;
+}
+
+.social a{
+color:#fff;
+font-size:25px;
+margin:0 10px;
+}
+
+.dark{
+background:#121212;
+color:#fff;
+}
+
+.dark .card,
+.dark form{
+background:#1f1f1f;
+color:#fff;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
